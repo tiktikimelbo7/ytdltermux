@@ -10,16 +10,6 @@
 echo -e "\e[035m"  "Updating default packages\n"
 apt update && apt upgrade -y
 
-echo -e "\e[032m" "Requesting acces to storage\n"
-sleep 2
-echo -e "\e[032m" "Allow Storage Permission!"
-sleep 2
-termux-setup-storage 
-sleep 5
-
-echo -e "\e[033m" "Installing python\n"
-pkg install python -y
-
 echo -e "\e[034m"  "Installing youtube-dl\n"
 pip install youtube-dl
 
